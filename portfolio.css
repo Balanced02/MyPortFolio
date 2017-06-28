@@ -1,0 +1,209 @@
+a {
+  text-decoration: none;
+}
+.box {
+  color: white;
+  padding: 16px 4px 16px 70px;
+  border-radius: 6px;
+  font-size: 15px;
+  box-shadow:10px 10px 40px 1px #000;
+  background-color: purple;
+  background: linear-gradient(90deg, purple, pink);
+  position: fixed;
+  z-index: 2;
+  }
+h3 {
+  font-family: Lobster, Monospace;
+  font-size: 30px;
+}
+.pic-border{
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+  border-radius: 50%;
+  }
+.pic-border:hover {
+  animation-name: sweet;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  }
+@keyframes sweet {
+  50%  {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 4%;
+    transform: scale(1.2);
+    position: relative;
+  }
+  100% {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 4%;
+    transform: scale(1.4);
+    position: relative;
+  }
+}
+.btn-sweet {
+    background: rgba(080,000,080,0.4);
+    color: #fff;
+    float: right;
+    box-width: 1px;
+    font-family: Arial;
+    font-size: 17px;
+    box-shadow: 3px 3px 7px #000000; 
+}
+.btn-sweet:hover {
+  animation-name: sweet-btn;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes sweet-btn {
+  0% {
+    background: rgba(080,000,080,0.1);
+    color: #fff;
+    transform: scale(1.1);
+  }
+  25% {
+    background: rgba(080,000,080,0.2);
+    color: #fff;
+    transform: scale(1.1);
+  }
+  50% {
+    background: rgba(080,000,080,0.3);
+  color: #fff;
+  transform: scale(1.1);
+  }
+  75% {
+    background: rgba(080,000,080,0.2);
+    color: #fff;
+    transform: scale(1.1);
+  }
+  100% {
+    background: rgba(080,000,080,0.1);
+    color: #fff;
+    transform: scale(1.1);
+  }
+}
+.formbutton {
+  float: right;
+  padding: 8px 12px; 
+  margin: 8px 0 0;
+  font-family: Monospace;
+  border: 2px solid #78788c;
+  background: white;
+  color: #5a5a6e;
+  cursor: pointer;
+  }
+.formbutton:hover {
+  background: #5A5A6E;
+  color: 0;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#contact {
+  position: absolute;
+  bottom: -35px;
+  right: -35px;
+  background: gray;
+  color: white;
+  width: 400px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 15px;
+  box-shadow:10px 10px 40px 1px #000
+}
+span {
+  margin: 0px 5px 0px 15px;
+  font-size:
+}
+h4 {
+    margin-top: 0px;
+    margin-left: 40px;
+    font-family: Satisfy, Monospace;
+    font-size: 30px;
+    color: white;
+  }
+
+ .back-background {
+    padding-top: 50px;
+    border-style: solid;
+    border-color: pink;
+    border-width: 100%;
+    background: #FFB6C1;
+    background: linear-gradient(#FFB6C1, red);
+  }
+  .top-box {
+    padding-top: 100px;
+    border-style: solid;
+    border-color: #C0C0C0;
+    border-width: 100%;
+    background-color: #C0C0C0;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+    .middle-box {
+    padding-top: 30px;
+    padding-left: 70px;
+    border-style: solid;
+    border-color: #FFFFCC;
+    border-width: 100%;
+    background-color: #FFFFCC;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+.down-box {
+    padding-top: 30px;
+    padding-left: 70px;
+    border-style: solid;
+    border-color: #C0C0C0;
+    border-width: 100%;
+    background-color: #C0C0C0;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+.injected-text {
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+.my-pic {
+  border-style: solid;
+  border-width: 4px;
+  border-color: white;
+  border-radius: 50%;
+  z-index: 1;
+  }
+.my-pic:hover {
+  border-style: solid;
+  border-width: 4px;
+  border-color: white;
+  border-radius: 5%;
+  transform: scale(1.5);
+  position: absolute;
+  }
+.form{
+  padding:20px 30px;
+  background: gray;
+  border-color: gray;
+  border-width: 5px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  font-family:'Montserrat',sans-serif; 
+ }
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: white;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family:'Montserrat', sans-serif;
+  border-bottom:2px solid #bebed2
+}
+input:focus{
+  border-bottom: 3px solid #D3D3D3;
+  border-right: 3px solid #D3D3D3;
+}
+
