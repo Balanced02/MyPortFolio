@@ -6,7 +6,7 @@ body {
   background: linear-gradient(180deg, yellow, silver)
 }
 .head {
-    background-color: grey;
+    background-color: lightgray;
     background-image: url(http://wallpapercave.com/wp/XM6OoVp.jpg);
     background-size: cover;
     background-blend-mode: multiply;
@@ -209,7 +209,7 @@ h4 {
   box-sizing: border-box;
   font-family:'Montserrat',sans-serif; 
  }
-input {
+input, textarea {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
