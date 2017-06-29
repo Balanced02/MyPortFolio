@@ -26,6 +26,7 @@ body {
       color: white;
       text-shadow: 0.5rem 0.8rem gray;
       display: inline-block;
+      margin-top: 30px;
       padding: 2rem 2rem;
       border-bottom: 5px solid red;
       border-top: 5px solid red;
@@ -230,7 +231,7 @@ input, textarea {
   resize: none;
   border: 0;
   font-family:'Montserrat', sans-serif;
-  border-bottom:2px solid #bebed2
+  border-bottom:2px solid #bebed2;
 }
 input:focus{
   border-bottom: 3px solid #D3D3D3;
@@ -261,14 +262,6 @@ nav {
 
 nav ul li:hover {
   background: gray;
-}
-.navbar-brand
-{
-    position: absolute;
-    width: 100%;
-    left: 0;
-    text-align: center;
-    margin:0 auto;
 }
 .upbutton:hover {
   background: #5A5A6E;

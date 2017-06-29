@@ -26,5 +26,6 @@ $(document).ready(function (){
                 $('html, body').animate({
                     scrollTop: $("#homepg").offset().top
                 }, 2000);
-            });
-        });
+            });   
+        }
+        );
