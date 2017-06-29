@@ -265,10 +265,48 @@ nav {
 nav ul li:hover {
   background: gray;
 }
-.upbutton:hover {
+.active {
+  background: gray;
+  color: white;
+}
+.upbutton{
   background: #5A5A6E;
-  filter: brightness(90%);
+  filter: brightness(100%);
   color: white;
   transform: scale(1.1);
+  border: 5px solid white;
+  border-radius: 50%;
 }
-
+.upbutton:hover {
+  background: #5A5A6E;
+  filter: brightness(50%);
+  color: white;
+  transform: scale(1.1);
+  border: 5px solid white;
+  border-radius: 50%;
+  animation: upbutt;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes upbutt {
+  0% {
+    filter: brightness(90%);
+    border-color: gray;
+  }
+  25% {
+    filter: brightness(95%);
+    border-color: lightgray;
+  }
+50% {
+    filter: brightness(100%);
+    border-color:lightgrey;
+}
+75% {
+    border-color: grey;
+    filter: brightness(95%);
+}
+100% {
+    border-color: lightgrey;
+    filter: brightness(90%);
+}
+}

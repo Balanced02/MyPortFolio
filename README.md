@@ -1,2 +1,3 @@
 ### My Portfolio
-# My First Website
+# Details about Balanced
+> You would care little about what others think about you if only you know how little they can think...
