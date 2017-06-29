@@ -1,5 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Marck+Script|Pacifico');
 a {
   text-decoration: none;
+}
+body {
+  background: linear-gradient(180deg, yellow, silver)
+}
+.head {
+    background-color: grey;
+    background-image: url(http://wallpapercave.com/wp/XM6OoVp.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    display: relative;
+    height: 700px;
+    padding: 100px 16px 16px 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+.name {
+      font-size: 50px;
+      font-family: Pacifico, cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-bottom: 0;
+      background-color:lightblue;
+      color: white;
+      text-shadow: 0.5rem 0.8rem gray;
+      display: inline-block;
+      padding: 2rem 2rem;
+      border-bottom: 5px solid red;
+      border-top: 5px solid red;
+}
+.descrip {
+      font-size: 25px;
+      font-family: Lobster, cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-bottom: 0;
+      background-color: salmon;
+      color: blue;
+      text-shadow: 0.3rem 0.5rem yellowgreen;
+      display: inline-block;
+      padding: 2rem 2rem;
+      text-align: center;
+}
+.social {
+  font-size: 40px;
+  background-color: lightcyan;
+  padding: 5px;
+  border: 2px solid blue;
 }
 .box {
   color: white;
@@ -15,76 +60,51 @@ a {
 h3 {
   font-family: Lobster, Monospace;
   font-size: 30px;
+  padding: 1em 1em;
 }
-.pic-border{
-  border-style: solid;
-  border-width: 3px;
-  border-color: white;
+.profil-img {
+  position: block;
+  background-color: blueviolet;
+  background-image: url(https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/18222330_1501698599903145_5856675318964054274_n.jpg?oh=93ee8cfe9cba76430e8acad51473454f&oe=59A5E52A);
+  background-size: cover;
+  background-blend-mode: multiply;
+  display: relative;
+  height: 300px;
+  width: 300px;
+  color: transparent;
+  margin-top: 70px;
+  z-index: 2;
+  box-shadow: 2%;
+  border: 8px solid wheat;
   border-radius: 50%;
-  }
-.pic-border:hover {
-  animation-name: sweet;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  }
-@keyframes sweet {
-  50%  {
-    border-style: solid;
-    border-width: 1px;
-    border-color: white;
-    border-radius: 4%;
-    transform: scale(1.2);
-    position: relative;
-  }
-  100% {
-    border-style: solid;
-    border-width: 1px;
-    border-color: white;
-    border-radius: 4%;
-    transform: scale(1.4);
-    position: relative;
-  }
-}
-.btn-sweet {
-    background: rgba(080,000,080,0.4);
-    color: #fff;
-    float: right;
-    box-width: 1px;
-    font-family: Arial;
-    font-size: 17px;
-    box-shadow: 3px 3px 7px #000000; 
-}
-.btn-sweet:hover {
-  animation-name: sweet-btn;
+  margin-left: 30%;
+  margin: auto;
+    }
+.profil-img:hover {
+  animation: sweet1;
   animation-duration: 2s;
-  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
 }
-@keyframes sweet-btn {
-  0% {
-    background: rgba(080,000,080,0.1);
-    color: #fff;
-    transform: scale(1.1);
-  }
+@keyframes sweet1 {
   25% {
-    background: rgba(080,000,080,0.2);
-    color: #fff;
     transform: scale(1.1);
+    border-radius: 30%;
   }
-  50% {
-    background: rgba(080,000,080,0.3);
-  color: #fff;
-  transform: scale(1.1);
-  }
-  75% {
-    background: rgba(080,000,080,0.2);
-    color: #fff;
+50% {
+    transform: scale(1.2);
+    border-radius: 20%;
+}
+75% {
     transform: scale(1.1);
-  }
-  100% {
-    background: rgba(080,000,080,0.1);
-    color: #fff;
-    transform: scale(1.1);
-  }
+    border-radius: 10%;
+    border: 5px solid yellowgreen;
+}
+100% {
+    transform: scale(1.2);
+    background-color: transparent;
+    border-radius: 0%;
+    border: 3px solid yellow;
+}
 }
 .formbutton {
   float: right;
@@ -116,7 +136,7 @@ h3 {
 }
 span {
   margin: 0px 5px 0px 15px;
-  font-size:
+  font-size: 20px;
 }
 h4 {
     margin-top: 0px;
@@ -126,26 +146,21 @@ h4 {
     color: white;
   }
 
- .back-background {
-    padding-top: 50px;
-    border-style: solid;
-    border-color: pink;
-    border-width: 100%;
-    background: #FFB6C1;
-    background: linear-gradient(#FFB6C1, red);
-  }
   .top-box {
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    padding-right: 20px;
+    padding-left: 20px;
     border-style: solid;
     border-color: #C0C0C0;
     border-width: 100%;
     background-color: #C0C0C0;
     margin-left: 100px;
     margin-right: 100px;
+    text-align: center;
   }
     .middle-box {
-    padding-top: 30px;
-    padding-left: 70px;
+    padding: 40px 0px;
     border-style: solid;
     border-color: #FFFFCC;
     border-width: 100%;
@@ -175,13 +190,14 @@ h4 {
   height: 400px;
   width: 400px;
   z-index: 1;
+  vertical-align: middle;
   }
 .my-pic:hover {
   border-style: solid;
   border-width: 4px;
   border-color: white;
   border-radius: 5%;
-  transform: scale(1.5);
+  transform: scale(1.2);
   position: absolute;
   }
 .form{
@@ -208,4 +224,37 @@ input:focus{
   border-bottom: 3px solid #D3D3D3;
   border-right: 3px solid #D3D3D3;
 }
+img {
+  width: 200px;
+  height: 200px;
+}
+.work {
+  position: relative;
+  border: 5px solid gray;
+  border-radius: 10%;
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 5%
+  }
+.work:hover {
+  border-radius: 5%;
+  transform: scale(1.2);
+  z-index: 2;
+  }
+nav {
+  font-weight: bold;
+  letter-spacing: 0.025em;
+}
 
+nav ul li:hover {
+  background: gray;
+}
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+}

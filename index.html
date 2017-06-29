@@ -1,8 +1,13 @@
-<link rel="stylesheet" href="css/portfolio.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" type="text/css">
+<head>
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" type="text/css">
+    <title>Balanced Portfolio</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="js/portfolio.js"></script>
+</head>
 <style>
     h3 {
         margin-top: 0px;
@@ -11,87 +16,87 @@
         color: white;
     }
 </style>
-<div class="container-fluid" style="position:absolute">
-    <div class="box">
-        <div class="row">
-            <div class="col-xs-5">
-                <h3 class="text-left injected-text"> D Balanced Profile </h3>
+<div style="position:absolute; text-align: left;">
+    <div>
+        <nav class="navbar navbar-default" style="position: fixed; background-color: white; width: 100%; z-index: 2">
+            <div class="nav navbar-collapse collapse" style="display: flex;">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#homepg" id="cool">Home</a></li>
+                    <li><a href="#aboutpg" id="cool">About</a></li>
+                    <li><a href="#myworkspg" id="cool">Works</a></li>
+                    <li><a href="#contactpg" id="cool">Contact</a></li>
+                </ul>
             </div>
-            <div class="col-xs-7">
-                <div class="btn-group-justified">
-                    <div class="btn-group">
-                        <input type="button" class="btn btn-sweet" value="Home" id="home" onClick="document.getElementById('homepg').scrollIntoView();"
-                        />
-                    </div>
-                    <div class="btn-group">
-                        <a href="#myworkspg"><button class="btn btn-sweet">My Works</button></a></div>
-                    <div class="btn-group">
-                        <a href="#contactpg"><button class="btn btn-sweet">Contact</button></a></div>
-                </div>
+        </nav>
+    </div>
+</div>
+<div>
+    <div class="head" id="homepg">
+        <div class="profil-img"></div>
+        <h1 class="name">AYOMIDE DANIEL</h1>
+        <div>
+            <p class="descrip">
+                <u>Web Designer &amp; Front End Developer</u>
+            </p>
+        </div>
+        <div>
+            <span class="social-links">
+                    <a class = "social" href="http://twitter.com/balanced02" target="_blanc"><i class="fa fa-twitter"></i></a>
+                    <a class = "social" href="http://plus.google.com/+MohammedErraysyy" target="_blanc"><i class="fa fa-google-plus"></i></a>
+                    <a class = "social" href="http://facebook.com/adebalanced02" target="_blanc"><i class="fa fa-facebook"></i></a>
+                    <a class = "social" href="http://linkedin.com/in/balanced02" target="_blanc"><i class="fa fa-linkedin"></i></a>
+                    <a class = "social" href="http://github.com/balanced02" target="_blanc"><i class="fa fa-github"></i></a>
+                </span>
+        </div>
+    </div>
+    <div class="top-box">
+        <div class="row">
+            <h1 class="text-center" style="display: flex; flex-flow: row wrap; align-items: center; justify-content: space-around; font-family: Lobster"
+                id="aboutpg"> ABOUT </h1>
+            <h1 class="text-center">~
+                <|>~</h1>
+            <div style="margin: auto">
+                <h3 class="text-center"> Front-End Developer and UX/UI designer, with practical experience in project management, branding strategy,
+                    and creative direction; devoted to functional programming and information architecture.
+                    </h4>
             </div>
         </div>
     </div>
-    <div class="back-background">
-        <div class="top-box">
-            <div class="row">
-                <h1 class="text-center" style="font-family: Lobster" id="homepg"> HOME </h1>
-                <h1 class="text-center">~
-                    <|>~</h1>
-                <div class="col-xs-7">
-                    <h3 class="text-center"> Front-End Developer and UX/UI designer, with practical experience in project management, branding strategy,
-                        and creative direction; devoted to functional programming and information architecture. </h4>
-                </div>
-                <div class="col-xs-3">
-                    <img class="pic-border img-responsive" id="pics" src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/18222330_1501698599903145_5856675318964054274_n.jpg?oh=93ee8cfe9cba76430e8acad51473454f&oe=59A5E52A"
-                        alt="Profile Pic">
-                </div>
-            </div>
+    <div class="middle-box" id="myworkspg">
+        <h1 class="text-center" style="font-family: Lobster" id="myworkspg"> MY WORKS </h1>
+        <h1 class="text-center">~
+            <|>~</h1>
+        <div style="display: flex; align-items: center; justify-content: space-around">
+            <a href="https://codepen.io/Balanced02/full/vmzopN"><img class="work img-responsive" style = "width: 200px; height: 200px;"src="img/norman.png" alt="Pic"></a>
+            <a href="https://codepen.io/Balanced02/full/XgajbJ"><img class="work img-responsive" style = "width: 200px; height: 200px;"src="img/product.png" alt="Pic2"></a>
+            <a href="https://codepen.io/Balanced02/full/ybZZpp"><img class="work img-responsive" style = "width: 200px; height: 200px;"src="img/wiki.png" alt="Pic3"></a>
+            <a href="https://codepen.io/Balanced02/full/LLLQeq"><img class="work img-responsive" style = "width: 200px; height: 200px;"src="img/survey.png" alt="Pic4"></a>
         </div>
-        <div class="middle-box" id="myworkspg">
-            <h1 class=text-center> MY WORKS </h1>
-            <h1 class="text-center">~
-                <|>~</h1>
-            <div class="row">
-                <div class="col-xs-5">
-                    <img class="my-pic" src="img/norman.png"
-                        alt="Pic"> </div>
-                <div class="col-xs-5">
-                    <img class="my-pic" src="img/product.png"
-                        alt="Pic2"></div>
-            </div>
-            <div class="row">
-                <div class="col-xs-5">
-                    <img class="my-pic" src="img/wiki.png"
-                        alt="Pic3">
-                </div>
-                <div class="col-xs-5">
-                    <img class="my-pic" src="img/survey.png"
-                        alt="Pic4">
-                </div>
-            </div>
-        </div>
-        <div class="down-box" id="contactpg">
-            <h1 class=text-center> CONTACT ME </h1>
-            <h1 class="text-center">~
-                <|>~</h1>
-            <div class="row">
-                <div class="col-xs-11">
-                    <form class="form">
-                        <p class="text-center" style="color: white; font-size: 18px"><em> For Enquiries, fill this short form, I'll reply ASAP</em> </p>
-                        <div class="row">
+    </div>
+    <div class="down-box" id="contactpg">
+        <h1 class=text-center> CONTACT ME </h1>
+        <h1 class="text-center">~
+            <|>~</h1>
+        <div class="row">
+            <div class="col-xs-11">
+                <form class="form">
+                    <p class="text-center" style="color: white; font-size: 18px"><em> For Enquiries, fill this short form, I'll reply ASAP</em> </p>
+                    <div class="row">
 
-                            <p type="Name:" required><input placeholder="Write your name here.."></input>
-                            </p>
-                            <p type="Email:"><input placeholder="Your E-mail address" required></input>
-                            </p>
-                            <p type="Message:" required><input placeholder="What would you like to tell us.."></input>
-                            </p>
-                            <button class="formbutton">Send Message</button>
-                        </div>
-                        <div id="contact">
-                            <span class="fa fa-phone"></span>+235(0)8188274143
-                            <span class="fa fa-envelope-o"></span>adebalanced02@gmail.com
-                        </div>
-                </div>
-                <div class="col-xs-5">
-                    </script>
+                        <p type="Name:" required><input placeholder="Write your name here.."></input>
+                        </p>
+                        <p type="Email:"><input placeholder="Your E-mail address" required></input>
+                        </p>
+                        <p type="Message:" required><input placeholder="What would you like to tell us.."></input>
+                        </p>
+                        <button class="formbutton">Send Message</button>
+                    </div>
+                    <div id="contact">
+                        <span class="fa fa-phone"></span>+235(0)8188274143
+                        <span class="fa fa-envelope-o"></span>adebalanced02@gmail.com
+                  </div>
+            </div>
+        </div>
+        <span style = "font-size: 50px; color: whitesmoke; font-family: Lobster, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"><button><i class = "fa fa-arrow-circle-up" id = "top" style = "font-size: 100px; color: grey;;"></button></i> Back to top</span> 
+    </div>
+</div>
