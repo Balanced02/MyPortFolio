@@ -1,4 +1,7 @@
 ### My Portfolio
 # Details about Balanced
-+ Haven't figured out how to make my navbar links active yet... task for tonight
+####Things Yet to be done
++ Make my navbar links active
++ Hide my navbar when scrolling
++ Smooth scroll when navbar link is clicked
 > You would care little about what others think about you if only you know how little they can think...
