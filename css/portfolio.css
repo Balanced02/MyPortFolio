@@ -22,18 +22,17 @@ body {
       font-family: Pacifico, cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       margin-bottom: 0;
       opacity: 0.8;
-      background-color:lightblue;
       color: white;
-      text-shadow: 0.5rem 0.8rem gray;
+      text-shadow: 0.5rem 0.8rem lightgrey;
       display: inline-block;
       margin-top: 30px;
       padding: 2rem 2rem;
       border-bottom: 5px solid red;
       border-top: 5px solid red;
 }
-.sweett {
+/*.sweett {
   overflow: hidden;
-  border-right: .15em solid black;
+  border-right: 0.15em solid black;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .15em;
@@ -50,12 +49,15 @@ body {
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: white; }
-}
+}*/
 .descrip {
       font-size: 25px;
       font-family: Lobster, cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       margin-bottom: 0;
-      background-color: salmon;
+      opacity: 0.7;
+      background-color: lightblue;
+      border-bottom: 5px solid blue;
+      border-radius: 10%;
       color: blue;
       text-shadow: 0.3rem 0.5rem yellowgreen;
       display: inline-block;
@@ -220,7 +222,7 @@ h4 {
   border-width: 5px;
   border-radius: 20px;
   box-sizing: border-box;
-  font-family:'Montserrat',sans-serif; 
+  font-family:'Montserrat',sans-serif;
  }
 input, textarea {
   width: 100%;
@@ -269,3 +271,4 @@ nav ul li:hover {
   color: white;
   transform: scale(1.1);
 }
+
