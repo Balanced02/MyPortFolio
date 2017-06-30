@@ -86,6 +86,12 @@ window.onload = function () {
     css.type = "text/css";
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff;letter-spacing: .15em; overflow: hidden; font-size: 45px; color: blue}";
     document.body.appendChild(css);
+
+var username = prompt("What is your name");
+if (username !=null) {
+    document.getElementById("username").innerHTML = "Hello " + username + ", How are you today?"
+}
+
 };
 
 // $(document).ready(function () {
