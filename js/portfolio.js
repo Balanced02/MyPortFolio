@@ -88,10 +88,12 @@ window.onload = function () {
     document.body.appendChild(css);
 
 var username = prompt("What is your name");
-if (username !=null) {
+if (username.length !=0) {
     document.getElementById("username").innerHTML = "Hello " + username + ", How are you today?"
 }
-
+else {
+    document.getElementById("username").innerHTML = "Hello visitor, how are you today?"
+}
 };
 
 // $(document).ready(function () {
