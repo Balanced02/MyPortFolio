@@ -1,19 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Lakki+Reddy|Lobster|Marck+Script|Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Lobster|Marck+Script|Pacifico');
 a {
     text-decoration: none;
 }
-
+.nav {
+  background-color: #e6ffe6;
+  border: 3px solid white;
+}
 body {
     background: linear-gradient(180deg, whitesmoke, silver)
 }
 
 .head {
-    background-color: white;
-    filter: brightness(90%);
+    background-color: #e6ffe6;
     background-image: url(http://wallpapercave.com/wp/XM6OoVp.jpg);
     background-size: cover;
     background-blend-mode: multiply;
     display: relative;
+    border: 9px solid white;
     height: 700px;
     padding: 100px 0px;
     margin-left: 100px;
@@ -43,10 +46,10 @@ body {
     background-color: transparent;
     text-shadow: 0.2rem 0.5rem black;
     display: inline-block;
-    padding: 2rem 2rem;
-    border-bottom: 5px solid red;
-    border-top: 5px solid red;
-    font-family: 'Lakki Reddy', cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 2rem 10rem;
+    border-bottom: 10px solid whitesmoke;
+    border-top: 10px solid white;
+    font-family: 'Berkshire Swash', cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -102,11 +105,9 @@ body {
 
 .profil-img {
     position: block;
-    background-color: blueviolet;
     background-image: url(https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/18222330_1501698599903145_5856675318964054274_n.jpg?oh=93ee8cfe9cba76430e8acad51473454f&oe=59A5E52A);
-    filter: brightness(50%);
+    filter: grayscale(100%) blur(5px);
     background-size: cover;
-    background-blend-mode: multiply;
     display: relative;
     height: 300px;
     width: 300px;
@@ -130,23 +131,25 @@ body {
     25% {
         transform: scale(1.1);
         border-radius: 30%;
+        filter: grayscale(75%) blur(4px);
     }
     50% {
         transform: scale(1.2);
         border-radius: 20%;
+        border: 3px solid white;
+        filter: grayscale(50%) blur(3px);
     }
     75% {
         transform: scale(1.1);
         border-radius: 10%;
-        border: 5px solid yellowgreen;
-        filter: brightness(70%);
+        filter: grayscale(25%) blur(2px);
     }
     100% {
         transform: scale(1.2);
         background-color: transparent;
-        border-radius: 0%;
-        border: 8px solid wheat;
-        filter: brightness(100%);
+        border-radius: 10%;
+        border: none;
+        filter: grayscale(0) blur();
     }
 }
 
@@ -196,13 +199,10 @@ h4 {
 
 .top-box {
     padding-top: 50px;
-    filter: brightness(80%);
     padding-bottom: 70px;
     padding-right: 20px;
     padding-left: 20px;
-    border-style: solid;
-    border-color: #C0C0C0;
-    border-width: 100%;
+    border: 9px solid white;
     background-color: #C0C0C0;
     margin-left: 100px;
     margin-right: 100px;
@@ -211,10 +211,12 @@ h4 {
 
 .middle-box {
     padding: 40px 0px;
-    border-style: solid;
-    border-color: #FFFFCC;
+    border: 9px solid white;
     border-width: 100%;
-    background-color: #FFFFCC;
+    background-size: cover;
+    background-blend-mode: multiply;
+    border-width: 100%;
+    background-color: whitesmoke;
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -222,9 +224,7 @@ h4 {
 .down-box {
     padding-top: 30px;
     padding-left: 70px;
-    border-style: solid;
-    border-color: #C0C0C0;
-    border-width: 100%;
+    border: 9px solid white;
     background-color: #C0C0C0;
     margin-left: 100px;
     margin-right: 100px;
@@ -293,14 +293,16 @@ img {
     border: 5px solid gray;
     border-radius: 10%;
     vertical-align: middle;
+    filter: blur(2px) grayscale(100%);
     margin: 0 auto;
     text-align: center;
     border-radius: 5%
 }
 
 .work:hover {
-    border-radius: 5%;
+    border-radius: 3%;
     transform: scale(1.2);
+    filter: blur() grayscale(0);
     z-index: 2;
 }
 
