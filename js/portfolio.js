@@ -84,7 +84,7 @@ window.onload = function () {
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff;letter-spacing: .15em; overflow: hidden; font-size: 45px; color: blue}";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff;letter-spacing: .15em; overflow: hidden; font-size: 45px; color: white};";
     document.body.appendChild(css);
 
 var username = prompt("What is your name");
