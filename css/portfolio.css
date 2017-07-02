@@ -2,7 +2,11 @@
 a {
     text-decoration: none;
 }
-
+#date {
+    display: inline-block;
+    font-family: Lobster, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blue;
+}
 #username {
     font-size: 30px;
     font-family: Pacifico, cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -47,7 +51,6 @@ body {
 
 .head {
     background-color: #e6ffe6;
-    background-image: url(http://wallpapercave.com/wp/XM6OoVp.jpg);
     background-size: cover;
     background-blend-mode: multiply;
     display: relative;

@@ -28,7 +28,6 @@ $(document).ready(function () {
         }, 2000);
     });
 });
-
 var TxtType = function (el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -71,7 +70,6 @@ TxtType.prototype.tick = function () {
         that.tick();
     }, delta);
 };
-
 window.onload = function () {
     var elements = document.getElementsByClassName('typewrite');
     for (var i = 0; i < elements.length; i++) {
@@ -81,31 +79,54 @@ window.onload = function () {
             new TxtType(elements[i], JSON.parse(toRotate), period);
         }
     }
-    // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff;letter-spacing: .15em; overflow: hidden; font-size: 45px; color: white};";
     document.body.appendChild(css);
 
-var username = prompt("What is your name");
-if (username.length !=0) {
-    document.getElementById("username").innerHTML = "Hello " + username + ", How are you today?"
-}
+    var username = prompt("What is your name");
+    if (username.length != 0) {
+        document.getElementById("username").innerHTML = "Hello " + username + ", How are you today?"
+    }
 };
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    p = checkTime(s);
+    if (h == 12) { p = p + 'pm'}
+    else if (h>12) {
+        h = h-12;
+        p = p + "pm";
+    }
+    else if (h<12) {
+        p = p + 'am'
+    }
+    var time = h + ":" + m + ":" + p;
+    var t = setTimeout(startTime, 500);
+    document.getElementById('date').innerHTML = time
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};
+    return i;
+}
 
+window.onload = startTime();
 // $(document).ready(function () {
 //     $(document).on("scroll", onScroll);
-    
+
 //     //smoothscroll
 //     $('a[href^="#"]').on('click', function (e) {
 //         e.preventDefault();
 //         $(document).off("scroll");
-        
+
 //         $('a').each(function () {
 //             $(this).removeClass('active');
 //         })
 //         $(this).addClass('active');
-      
+
 //         var target = this.hash,
 //             menu = target;
 //         $target = $(target);
