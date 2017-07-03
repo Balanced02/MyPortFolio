@@ -1,6 +1,6 @@
 ### My Portfolio
 # Details about Balanced
-####Things Yet to be done
+#### Things Yet to be done
 + Make my navbar links active
 + Hide my navbar when scrolling
 + Smooth scroll when navbar link is clicked
