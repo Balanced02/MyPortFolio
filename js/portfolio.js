@@ -86,7 +86,7 @@ window.onload = function () {
 
     var username = prompt("What is your name");
     if (username.length != 0) {
-        document.getElementById("username").innerHTML = "Hello " + username + ", How are you today?"
+        document.getElementById("username").innerHTML = "Hello " + username.toUpperCase() + ", How are you today?"
     }
 };
 function startTime() {
